@@ -1,4 +1,4 @@
-import 'package:bloc_simple/core/models/dto/{{name.snakeCase()}}_dto.dart';
+import 'package:{{app_name}}/core/models/dto/{{name.snakeCase()}}_dto.dart';
 import 'package:dio/dio.dart';
 import 'package:retrofit/retrofit.dart';
 
@@ -12,9 +12,9 @@ abstract class {{name.pascalCase()}}Repository {
   }
 
   @{{service_method.upperCase()}}('PUT HERE ENDPOINT')
-  Future<{{name.pascalCase()}}DTO> {{service_method.lowerCase()}}{{name.pascalCase()}}([
+  Future<{{name.pascalCase()}}DTO> {{service_method.lowerCase()}}{{name.pascalCase()}}(
     // @Query('queryParameter') String? queryParameter,
     // @Path('pathParameter') String? pathParameter,
     // @Body() {{name.pascalCase()}} {{name.camelCase()}}
-  ]);
+  );
 }
