@@ -12,9 +12,9 @@ abstract class {{name.pascalCase()}}Repository {
   }
 
   @{{service_method.upperCase()}}('PUT HERE ENDPOINT')
-  Future<{{name.pascalCase()}}DTO> {{service_method.lowerCase()}}{{name.pascalCase()}}([
+  Future<{{name.pascalCase()}}DTO> {{service_method.lowerCase()}}{{name.pascalCase()}}(
     // @Query('queryParameter') String? queryParameter,
     // @Path('pathParameter') String? pathParameter,
     // @Body() {{name.pascalCase()}} {{name.camelCase()}}
-  ]);
+  );
 }
