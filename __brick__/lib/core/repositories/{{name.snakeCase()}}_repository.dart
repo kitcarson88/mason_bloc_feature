@@ -1,4 +1,4 @@
-import 'package:bloc_simple/core/models/dto/{{name.snakeCase()}}_dto.dart';
+import 'package:{{app_name}}/core/models/dto/{{name.snakeCase()}}_dto.dart';
 import 'package:dio/dio.dart';
 import 'package:retrofit/retrofit.dart';
 
